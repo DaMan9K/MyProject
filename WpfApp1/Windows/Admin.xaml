@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:WpfApp1.Windows"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Панель администратора" Height="634.5" Width="1000" Closed="Window_Closed" SizeChanged="WinAdmin_SizeChanged">
+        Title="Панель администратора" MinHeight="200" Height="482" Width="1000" Closed="Window_Closed" SizeChanged="WinAdmin_SizeChanged" WindowStyle="ToolWindow">
     <Grid Background="#FF181B28">
         <TabControl TabStripPlacement="Left"  Background="#FF181B28">
             <TabItem x:Name="TIWorker" Width="80" Height="150" BorderBrush="WhiteSmoke" Header="Работники" Background="#FF181B28" Foreground="WhiteSmoke" Margin="1,0, 1,0">
-                <Grid x:Name="GridWorker" Background="#FF181B28" Margin="0,1,-5,-1">
-                    <DataGrid x:Name="DGWorker" Background="#FF181B28"  Margin="-2,-3,2,120" AutoGenerateColumns="False" IsReadOnly="True" SelectedCellsChanged="DGWorker_SelectedCellsChanged" Foreground="#FF0C0101">
+                <Grid x:Name="GridWorker" Background="#FF181B28">
+                    <DataGrid x:Name="DGWorker" Background="#FF181B28"  Margin="0 0 0 120" AutoGenerateColumns="False" IsReadOnly="True" SelectedCellsChanged="DGWorker_SelectedCellsChanged" Foreground="#FF0C0101">
                         <DataGrid.Resources>
                             <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                                 <Setter Property="Foreground" Value="WhiteSmoke"/>
