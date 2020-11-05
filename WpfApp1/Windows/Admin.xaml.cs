@@ -100,5 +100,11 @@ namespace WpfApp1.Windows
             }
         }
 
+        private void WinAdmin_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            TIWorker.Height = (this.Height - 45) / 3;
+            TIClient.Height = (this.Height - 45) / 3;
+            TIDeclarebt.Height = (this.Height - 45) / 3;
+        }
     }
 }
